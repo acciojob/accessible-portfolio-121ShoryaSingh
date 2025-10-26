@@ -1,16 +1,37 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Accessible Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <!-- Navigation with ARIA role -->
+  <nav role="navigation" class="navbar" style="background:#f6f8fa; padding:12px; margin-bottom:18px;">
+    <a href="#about" style="margin-right:16px;">About</a>
+    <a href="#projects" style="margin-right:16px;">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
+  <!-- Heading with ARIA role -->
+  <h1 role="heading" style="font-size:2.2em; margin-bottom:14px;">Jane Developer Portfolio</h1>
+
+  <!-- Profile image with ARIA role -->
+  <img role="img" src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="Jane Developer's profile photo" class="profile-img" style="width:120px; border-radius:50%; margin-bottom:18px; box-shadow:0 2px 8px #ccc;">
+
+  <!-- Brief Description -->
+  <p id="about" style="max-width:450px; margin:0 auto 20px auto; font-size:1.14em;">
+    Hello! I'm Jane Developer, a passionate full-stack web developer with experience in React, Next.js, MongoDB, and cloud integrations. I build robust, accessible, and scalable web applications.
+  </p>
+
+  <!-- Projects/Skills List with ARIA roles -->
+  <section id="projects">
+    <h2 style="font-size:1.3em;margin-top:10px;margin-bottom:9px;">Key Skills & Projects</h2>
+    <ul role="list" style="background:#eef2f7;padding:16px 20px;border-radius:8px;max-width:500px;margin:0 auto;">
+      <li role="listitem" style="margin-bottom:8px;">Warranty Receipt Vault - Next.js, Auth.js, Cloudflare R2</li>
+      <li role="listitem" style="margin-bottom:8px;">TaskManager Pro - React, MongoDB, Tailwind CSS</li>
+      <li role="listitem" style="margin-bottom:8px;">Personal Blog - Next.js, Markdown, Custom CMS</li>
+    </ul>
+  </section>
 </body>
-
 </html>
